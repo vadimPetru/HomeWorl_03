@@ -19,9 +19,9 @@ namespace HomeWorl_03
             do
             {
                 Console.WriteLine("Введите первое число:");
-                numbers.FirstNumber = numbers.Translation(numbers.FirstNumber);
+                numbers.FirstNumber = numbers.Translation();
                 Console.WriteLine("Введите второе число:");
-                numbers.SecondNumber = numbers.Translation(numbers.SecondNumber);
+                numbers.SecondNumber = numbers.Translation();
                 numbers.Show();
                 numbers.FirstNumber = numbers.FirstNumber + numbers.SecondNumber; // Find the sum of two numbers
                 numbers.SecondNumber = numbers.FirstNumber - numbers.SecondNumber; // Find second number

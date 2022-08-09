@@ -13,29 +13,21 @@ namespace HomeWorl_03
             Console.WriteLine("Реализовать алгоритм, который определяет является ли введенное целочисленное число полиндромом " +
                 "(читается одинаково слева направо и справа налево, для преобразования к типу int использовать Convert.ToInt32())");
             Console.Write("Введите число:");
-            string answer = "Полиндром";
-            string line = Console.ReadLine();
-            string firstNumber;
-            if(int.TryParse(line, out var cheack))
+            string EnterData = Console.ReadLine();
+            int number1 = Convert.ToInt32(EnterData);
+            char[] arrayChar = EnterData.ToCharArray();
+            Array.Reverse(arrayChar);
+            int number2 = Convert.ToInt32(new String(arrayChar));
+            if(number1 - number2 != 0)
             {
-                firstNumber = line;
-                string ReversseNumber = new string(firstNumber.Reverse().ToArray());
-               
-                for (int i = 0; i < firstNumber.Length; i++)
-                {
-                    if (firstNumber[i] != ReversseNumber[i])
-                    {
-                        answer = "Не полиндром";
-                    }
-                }
+                Console.WriteLine($"Число {number1} и {number2} не полиндром");
             }
             else
             {
-                throw new Exception("Вводим только цифры");
+                Console.WriteLine($"Число {number1} и {number2}  Полиндром");
             }
 
-            Console.WriteLine(answer);
-
+            Console.ReadKey();
         }
        
     }

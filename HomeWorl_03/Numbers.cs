@@ -11,22 +11,25 @@ namespace HomeWorl_03
     {
         public int FirstNumber { get; set; }
         public int SecondNumber { get; set; }
+
+        private int _number;
         public void Show() => Console.WriteLine($"FirstNumber is {FirstNumber} and secondNumber is {SecondNumber} ");
-        public  int Translation(int variable)
+        public  int Translation()
         {
-            do
+            
+            while(true)
             {
-                if (int.TryParse(Console.ReadLine(), out var number))
+                if (int.TryParse(Console.ReadLine(), out _number))
                 {
-                    variable = number;
+                   
                     break;
                 }
                 else
                 {
                     Console.WriteLine("Ввести надо число:");
                 }
-            } while (true);
-            return variable;
+            }
+            return _number;
         }
 
         

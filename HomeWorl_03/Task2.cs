@@ -18,18 +18,22 @@ namespace HomeWorl_03
             do
             {
                 Console.WriteLine("Введите первое число:");
-                numbers.FirstNumber = numbers.Translation(numbers.FirstNumber);
+                numbers.FirstNumber = numbers.Translation();
                 Console.WriteLine("Введите второе число:");
-                numbers.SecondNumber = numbers.Translation(numbers.SecondNumber);
-                if (numbers.FirstNumber == numbers.SecondNumber)
+                numbers.SecondNumber = numbers.Translation();
+                if (numbers.FirstNumber < numbers.SecondNumber)
                 {
-                    Console.WriteLine("Числа  равны");
+                    Console.WriteLine($"Число {numbers.SecondNumber} > Числа {numbers.FirstNumber}");
+                }
+                else if(numbers.FirstNumber > numbers.SecondNumber)
+                {
+                    Console.WriteLine($"Чило {numbers.FirstNumber} > Числа {numbers.SecondNumber}");
                 }
                 else
                 {
-                    Console.WriteLine($"Число {Math.Max(numbers.FirstNumber, numbers.SecondNumber)} > " +
-                        $"Числа {Math.Min(numbers.FirstNumber, numbers.SecondNumber)}");
+                    Console.WriteLine($"Числа {numbers.FirstNumber} и {numbers.SecondNumber} равны");
                 }
+
                 Console.WriteLine("Выберите вариант ответа: \n 1)Продолжаем вводить числа \n 2)Заканчиваем программу");
                 if (Console.ReadLine() == "2") break;
             } while (true);

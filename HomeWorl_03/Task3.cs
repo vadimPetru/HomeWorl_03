@@ -14,7 +14,9 @@ namespace HomeWorl_03
                 "(читается одинаково слева направо и справа налево, для преобразования к типу int использовать Convert.ToInt32())");
             Console.Write("Введите число:");
             string EnterData = Console.ReadLine();
+            // Enter the date
             int number1 = Convert.ToInt32(EnterData);
+            // 
             char[] arrayChar = EnterData.ToCharArray();
             Array.Reverse(arrayChar);
             int number2 = Convert.ToInt32(new String(arrayChar));

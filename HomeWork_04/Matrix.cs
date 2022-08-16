@@ -8,134 +8,151 @@ namespace HomeWork_04
 {
     internal class Matrix
     {
-  
-        private int _max = -100;
-        private int _min = 100;
-        private double _sum;
-        private double _arithmeticValue;
+
+        private int _max; // MaximunValue for array
+        private int _min; // MinimunValue for array
+        private double _sum; // Sum of all elements
 
 
-        int[,] matrix;
-        
-        public Matrix(int row ,int column)
+
+        int[,] _matrix; //Create array
+        /// <summary>
+        /// The construct for initialization private variable and initialization array
+        /// </summary>
+        /// <param name="row">the count of rows for array</param>
+        /// <param name="column">the count of columns for array</param>
+        /// <param name="lowerBound">The number is lower bound for value's array </param>
+        /// <param name="rightBound">The number is higher bound for value's array</param>
+        public Matrix(int row, int column, int lowerBound, int rightBound)
         {
-         
-            matrix = new int[row, column];
-        }
 
+            _matrix = new int[row, column];
+            _max = lowerBound;
+            _min = rightBound;
+        }
+        /// <summary>
+        /// Filling array random numbers 
+        /// </summary>
         public void FullArray()
         {
             Random rand = new();
-            for(int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < _matrix.GetLength(0); i++)
             {
-                for(int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < _matrix.GetLength(1); j++)
                 {
-                    matrix[i, j] = rand.Next(-100, 100);
+                    _matrix[i, j] = rand.Next(-100, 100);
                 }
             }
         }
-
+        /// <summary>
+        /// Serching Maximum element
+        /// </summary>
+        /// <returns></returns>
         public int Max()
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < _matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < _matrix.GetLength(1); j++)
                 {
-                    _max = Math.Max(_max, matrix[i, j]);
+                    if (_max < _matrix[i, j]) _max = _matrix[i, j];
                 }
             }
             return _max;
 
         }
-
+        /// <summary>
+        /// Serching Manimum element
+        /// </summary>
+        /// <returns></returns>
 
         public int Min()
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < _matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < _matrix.GetLength(1); j++)
                 {
-                    _min = Math.Min(_min, matrix[i, j]);
+                    if (_max < _matrix[i, j]) _max = _matrix[i, j];
                 }
             }
             return _min;
         }
 
-
+        /// <summary>
+        /// The Metod for finding the sum elements
+        /// </summary>
+        /// <returns></returns>
         public double Sum()
         {
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < _matrix.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int j = 0; j < _matrix.GetLength(1); j++)
                 {
-                    _sum += matrix[i,j];
+                    _sum += _matrix[i, j];
                 }
             }
             return _sum;
         }
+        /// <summary>
+        /// Finding average value
+        /// </summary>
+        /// <returns></returns>
+        public double ArithmeticValue() => Sum() / _matrix.Length;
 
-        public double arithmeticValue() => Sum() / matrix.Length;
-       
 
-
+        /// <summary>
+        /// Showing array in the console
+        /// </summary>
         public void Show()
         {
-           
-                for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int i = 0; i < _matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < _matrix.GetLength(1); j++)
                 {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
-                    {
-                        Console.Write(matrix[i, j]+ " ");
-                    }
-                        Console.WriteLine();
+                    Console.Write(_matrix[i, j] + " ");
                 }
-                
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// Method for returning a string literal
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return $"Maximum:{Max()},\nMinimum:{Min()},\nSum of elements:{Sum()},\n" +
+                $"ArithmeticValue:{ArithmeticValue()}.";
+        }
+        /// <summary>
+        /// Sorting Array
+        /// </summary>
+        public void BubbleSort()
+        {
+            for(int k = 0; k < _matrix.GetLength(0); k++)
+            {
+                for (int i = 0; i < _matrix.GetLength(0) - 1; i++)
+                {
+                    for (int j = 0; j < _matrix.GetLength(1) - 1; j++)
+                    {
+                        if (_matrix[i, j] < _matrix[i, j + 1])
+                        {
+                            Swap(ref _matrix[i, j], ref _matrix[i, j + 1]);
+                        }
+                    }
+
+
+                }
+            }
             
         }
 
-        public void BubbleSort()
-        {
-            int[] array = new int[matrix.Length];
-            int index = 0;
-            for(int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for(int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    array[index] = matrix[i, j];
-                    index++;
-                }
-            }
 
-
-            for(int i = 0; i < array.Length; i++)
-            {
-                for(int j = 1; j < array.Length; j++)
-                {
-                    if (array[j] < array[j - 1])
-                        Swap(ref array[j - 1], ref array[j]);
-                }
-            }
-            index = 0;
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    matrix[i, j] = array[index];
-                    index++;
-                }
-            }
-
-
-
-        }
-        public void Swap(ref int first, ref int second)
+        private static void Swap(ref int first, ref int second)
         {
             int third = first;
             first = second;
             second = third;
         }
-
-
 
     }
 }

@@ -10,43 +10,45 @@ namespace HomeWork_04
     {
 
 
-        
-        Dictionary<string, string> russianEnglish = new Dictionary<string, string>()
+        public void MethodCheack()
         {
-            { "Book" , "Книга" },
-            { "Pen" , "Ручка" },
-            { "Pensil" , "Карандаш" },
-            { "Mirror" ,"Зеркало" },
-            { "Candy", "Конфета" },
-            { "Phone", "Телефон" },
-            { "Notebook", "Записная книга" },
-            { "Newspapper", "Газета" },
-            { "HardDriver" , "Жесткий диск" },
-            { "Knife","Нож" },
+            Console.WriteLine("Enter  english word ");
+            string word = Console.ReadLine();
 
-
-
-
-        };
-        
-
-
-        public void CheackWord(string word)
-        {
-            
-            foreach(KeyValuePair<string, string> variable in russianEnglish)
+            Dictionary<string, string> russianEnglish = new()
             {
-                if(variable.Key == word || variable.Value == word)
-                {
-                    Console.WriteLine(variable.Key + "-" + variable.Value);
-                }
-                
+                { "Book", "Книга" },
+                { "Pen", "Ручка" },
+                { "Pensil", "Карандаш" },
+                { "Mirror", "Зеркало" },
+                { "Candy", "Конфета" },
+                { "Phone", "Телефон" },
+                { "Notebook", "Записная книга" },
+                { "Newspapper", "Газета" },
+                { "HardDriver", "Жесткий диск" },
+                { "Knife", "Нож" },
+            };
+            
+            if (russianEnglish.TryGetValue(word,out var value))
+            {
+                Console.WriteLine($"Word translation : {word} - {value}") ;
             }
+            else
+                Console.WriteLine("This dictionary isn't this word");
+
 
 
         }
+        
+
+
+
 
 
 
     }
+
+
+
 }
+    

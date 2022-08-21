@@ -23,6 +23,7 @@ namespace Homework_05
                 if(ExchangeRates[i].FirstCurrency == firstCurrency && ExchangeRates[i].SecondCurrency == secondCurrency)
                 {
                     ExchangeRates.RemoveAt(i);
+                    break;
                 }
             }
         }
@@ -56,8 +57,9 @@ namespace Homework_05
         {
             var SerchExchangeRate =  FindExchangeRate(firstCurrency, secondCurrency);
             SerchExchangeRate.CurrencyCount = count;
-            SerchExchangeRate.Value *= SerchExchangeRate.CurrencyCount;
+            SerchExchangeRate.Value *= count;
             AddExchangeRate(SerchExchangeRate);
+            TryDeleteExchangeRate(firstCurrency, secondCurrency);
         }
 
 

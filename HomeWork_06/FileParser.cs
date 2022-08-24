@@ -28,7 +28,7 @@ namespace HomeWork_06
 
         public static FileParser GetParser(string [] FileName)
         {
-            return FileName[FileName.Length-1] switch
+            return FileName[FileName.Length-1].ToLower() switch
             {
                 nameof(FileFormat.html) => new HtmlParser(FileName[0]),
                 nameof(FileFormat.xml) => new XmlParser(FileName[0]),

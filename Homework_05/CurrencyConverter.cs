@@ -59,6 +59,7 @@ namespace Homework_05
             SerchExchangeRate.CurrencyCount = count;
             SerchExchangeRate.Value *= count;
             AddExchangeRate(SerchExchangeRate);
+            Console.ReadKey();
             TryDeleteExchangeRate(firstCurrency, secondCurrency);
         }
 

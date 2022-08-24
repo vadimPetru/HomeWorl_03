@@ -15,8 +15,8 @@ var secondAnswer = Converts();// Converting with Boxing unboxing
 
 Console.WriteLine($"Input count");
 var count = Convert.ToInt32(CheackCount()); // Converting with cheack on numners
-Console.Clear();
 
+Console.Clear();
 converter.ConvertObject(firstAnswer, secondAnswer, count); // Add new ExchangeRate
 Console.WriteLine(converter);
 

@@ -1,11 +1,13 @@
 ﻿
 
 
-//first first = new();
+first first = new();
 
 second second = new();
 
-//second.MethodOld();
+second.MethodOld();
+
+
 
 
 [Obsolete("Use class B")]

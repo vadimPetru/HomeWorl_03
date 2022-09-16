@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWorkAttribute
 {
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple =true )]
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true )]
     internal class AccessLevelAttribute : Attribute
     {
         private readonly string _text;

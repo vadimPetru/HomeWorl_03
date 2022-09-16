@@ -11,13 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework_05", "Homework_05\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWork_06", "HomeWork_06\HomeWork_06.csproj", "{52E3CCCC-74CA-487E-A3C6-96A8389CFD5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkBYDelegatAndEvent", "HomeWorkBYDelegatAndEvent\HomeWorkBYDelegatAndEvent.csproj", "{939A58A5-B4C2-4F92-B57C-27B4ECFF3F0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkBYDelegatAndEvent", "HomeWorkBYDelegatAndEvent\HomeWorkBYDelegatAndEvent.csproj", "{939A58A5-B4C2-4F92-B57C-27B4ECFF3F0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkAttribute", "HomeWorkAttribute\HomeWorkAttribute.csproj", "{11ADCCDD-5B84-409F-B4C3-F530AB053B1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkAttribute", "HomeWorkAttribute\HomeWorkAttribute.csproj", "{11ADCCDD-5B84-409F-B4C3-F530AB053B1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkObsolete", "HomeWorkObsolete\HomeWorkObsolete.csproj", "{FCD56EC1-E6C2-4F73-A4E2-6F6CC4F9B705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkObsolete", "HomeWorkObsolete\HomeWorkObsolete.csproj", "{FCD56EC1-E6C2-4F73-A4E2-6F6CC4F9B705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkTimer", "HomeWorkTimer\HomeWorkTimer.csproj", "{3643B9FF-DE01-43D9-9A27-0E5E6DD6201A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkTimer", "HomeWorkTimer\HomeWorkTimer.csproj", "{3643B9FF-DE01-43D9-9A27-0E5E6DD6201A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDictionary", "MyDictionary\MyDictionary.csproj", "{06B3EB8B-9C6B-41CB-8623-C9BC2D848548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDictionaryTwo", "MyDictionaryTwo\MyDictionaryTwo.csproj", "{78EA7B60-24E6-42E8-B9F6-A5C0480FE927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationAndDeserializationExample", "SerializationAndDeserializationExample\SerializationAndDeserializationExample.csproj", "{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{3643B9FF-DE01-43D9-9A27-0E5E6DD6201A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3643B9FF-DE01-43D9-9A27-0E5E6DD6201A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3643B9FF-DE01-43D9-9A27-0E5E6DD6201A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B3EB8B-9C6B-41CB-8623-C9BC2D848548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B3EB8B-9C6B-41CB-8623-C9BC2D848548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B3EB8B-9C6B-41CB-8623-C9BC2D848548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B3EB8B-9C6B-41CB-8623-C9BC2D848548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EA7B60-24E6-42E8-B9F6-A5C0480FE927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EA7B60-24E6-42E8-B9F6-A5C0480FE927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EA7B60-24E6-42E8-B9F6-A5C0480FE927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EA7B60-24E6-42E8-B9F6-A5C0480FE927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

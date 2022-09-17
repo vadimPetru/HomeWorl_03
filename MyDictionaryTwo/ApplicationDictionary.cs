@@ -9,8 +9,6 @@ namespace MyDictionaryTwo
     public class ApplicationDictionary<TKey, TValue>
     {
         private List<Part<TKey, TValue>> _listObject;
-        private List<TKey> _listKey = new List<TKey>();
-        private int _index;
         Part<TKey, TValue> _item;
         public ApplicationDictionary()
         {
@@ -30,6 +28,8 @@ namespace MyDictionaryTwo
                 {
                     if (_listObject[i].Key.Equals(key) && _listObject[i].Value.Equals(value))
                         _listObject.RemoveAt(i);
+                 
+                   
                 }
 
             }
@@ -37,7 +37,6 @@ namespace MyDictionaryTwo
             {
                 Console.WriteLine("There isn't the element in this list");
             }
-
 
         }
 

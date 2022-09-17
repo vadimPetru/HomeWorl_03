@@ -1,50 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SerializationAndDeserializationExample
+﻿namespace SerializationAndDeserializationExample
 {   [Serializable]
     public  class Shape
     {
-        private Point _shapePoint;
-        private float _length;
-        private float _height;
-        private string _name;
+       
+        public Point ShapePoint { get; set; }
+        public float Length{ get; set; }
+      
+        public float Height { get; set; }
+        public string Name { get; set; }
 
         public Shape(Point shapePoint , float length,float height , string name)
         {
-            _shapePoint = shapePoint;
-            _length = length;
-            _height = height;
-            _name = name;
+            ShapePoint = shapePoint;
+            Length = length;
+            Height = height;
+           Name = name;
         }
         public Shape()
         {
 
         }
-        public Point ShapePoint { 
-            get => _shapePoint;
-            set => _shapePoint = value; 
-        }
-
-        public float Length
+       
+        public override string ToString()
         {
-            get => _length;
-            set => _length = value;
-        }
-
-        public float Height
-        {
-            get => _height;
-            set => _height = value;
-        }
-
-        public string Name
-        {
-            get => _name;
-            set => _name = value;
+         return $"ShapePoint.X:{this.ShapePoint.X}\n" +
+                $"   ShapePoint.Y:{this.ShapePoint.Y}\n" +
+                $"   Length:{this.Length}\n" +
+                $"   Height:{this.Height}\n" +
+                $"   Name:{this.Name}\n";
         }
 
     }

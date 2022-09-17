@@ -1,23 +1,7 @@
-﻿
-
-
-using SerializationAndDeserializationExample;
-using Newtonsoft.Json;
-
-
+﻿using SerializationAndDeserializationExample;
 
 Processing processing = new();
 processing.Working();
-
-Console.WriteLine("Newtonsoft.Json");
-string result = JsonConvert.SerializeObject(processing.Array);
-Console.WriteLine(result);
-processing.array2 = JsonConvert.DeserializeObject<Shape[]>(result);
-foreach(var variable in processing.array2)
-{
-    Console.WriteLine($"Name:{variable.Name}, Height:{variable.Height}, Length{variable.Length}" +
-        $", X:{variable.ShapePoint.X} , Y:{variable.ShapePoint.Y}");
-}
 
 
 

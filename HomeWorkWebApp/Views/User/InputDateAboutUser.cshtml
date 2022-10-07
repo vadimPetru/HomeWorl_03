@@ -1,29 +1,35 @@
-﻿
-<div class="forma" ><form method="post" action="~/User/InputDateAboutUser" >
-    <h1>Регистрация пользователя</h1>
-    <label>Фамилия</label><br/>
-    <input type="text" name="Surname"></input><br />
-    <label>Имя</label><br />
-    <input type="text" name="Name"></input><br />
-    <label>Возраст</label><br />
-    <input type="number" name="Age"></input><br />
-    <label>Образование</label><br />
-    <input type="text" name="Education"></input><br /><br/>
-        <input type="submit" name="button" asp-action="SecondTask" value="Send" size="20px"></input><br /><br /><br />
+﻿@using (Html.BeginForm("Handler", "User", FormMethod.Post))
+{
+    <div class="forma">
+
+        <h1>Регистрация пользователя</h1>
+        <label>Фамилия</label><br />
+        <input type="text" name="Surname"></input><br />
+        <label>Имя</label><br />
+        <input type="text" name="Name"></input><br />
+        <label>Отчество</label><br />
+        <input type="text" name="Patronomic"></input><br />
+        <label>Дата рождения</label><br />
+        <input type="text" name="DateOfBirth"></input><br />
+        <label>Пол</label><br />
+        <input type="text" name="Gender"></input><br />
+        <label>Информация о себе</label><br />
+        <input type="text" name="AboutYourself"></input><br /><br />
+        <input type="submit" name="button" asp-action="Handler" value="Send" size="20px"></input><br /><br /><br />
         <input type="submit" name="button2" asp-action="Serialization" value="ShowAuthorizedUsers" size="20px"></input><br /><br /><br />
 
-</form>
-</div>
-<style>
 
-   
+    </div>
+}
+
+<style>
 
 .forma {
         height: 10em;
         position: relative ;
         margin: 0;
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%)

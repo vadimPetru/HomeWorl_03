@@ -1,0 +1,14 @@
+Authorization -OnAuthorization
+Resource - OnResourceExecuting
+Action - OnActionExecuting
+Action - OnActionExecuted
+Result - OnResultExecuting
+Result - OnResultExecuted
+Resource - OnResourceExecuted
+Authorization -OnAuthorization
+Resource - OnResourceExecuting
+Action - OnActionExecuting
+Action - OnActionExecuted
+Result - OnResultExecuting
+Result - OnResultExecuted
+Resource - OnResourceExecuted

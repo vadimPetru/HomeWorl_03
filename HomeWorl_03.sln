@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDictionaryTwo", "MyDictio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationAndDeserializationExample", "SerializationAndDeserializationExample\SerializationAndDeserializationExample.csproj", "{51D1E1F7-9A03-4946-B499-C435CCCC2AEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkWebApp", "HomeWorkWebApp\HomeWorkWebApp.csproj", "{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkWebApp", "HomeWorkWebApp\HomeWorkWebApp.csproj", "{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAMiddleWare", "WebAMiddleWare\WebAMiddleWare.csproj", "{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

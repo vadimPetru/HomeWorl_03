@@ -1,0 +1,4 @@
+https://localhost:7226/
+https://localhost:7226/Home/Index
+https://localhost:7226/Home/Index2
+https://localhost:7226/Home/Index2

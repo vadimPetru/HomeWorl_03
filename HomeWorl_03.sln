@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerializationAndDeserializa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeWorkWebApp", "HomeWorkWebApp\HomeWorkWebApp.csproj", "{FECF4F97-AC21-41CB-88D5-4D4F4DB35000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAMiddleWare", "WebAMiddleWare\WebAMiddleWare.csproj", "{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAMiddleWare", "WebAMiddleWare\WebAMiddleWare.csproj", "{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkADONET", "HomeWorkADONET\HomeWorkADONET.csproj", "{26F013EA-9744-4EF0-8FB0-EEBD4C559A56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8096580C-2F7F-4A1B-AFF2-F920EF2A04AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F013EA-9744-4EF0-8FB0-EEBD4C559A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F013EA-9744-4EF0-8FB0-EEBD4C559A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F013EA-9744-4EF0-8FB0-EEBD4C559A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F013EA-9744-4EF0-8FB0-EEBD4C559A56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
